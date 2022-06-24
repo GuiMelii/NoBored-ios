@@ -15,7 +15,6 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     @objc func textFieldDidChange(_ textField: UITextField) {
         let convertedToNumber = Int(participantsTextField.text ?? "0")
         guard let text = participantsTextField.text, !text.isEmpty, convertedToNumber != nil else {
-            nextButton.isEnabled = false
             participantsTextField.text = ""
             return
         }
@@ -25,7 +24,6 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextButton.isEnabled = false
         participantsTextField.delegate = self
         participantsTextField.keyboardType = .numberPad
         participantsTextField.borderStyle = .none
@@ -33,14 +31,13 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
             string: "0",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]
         )
-        participantsTextField.text = "0"
         participantsTextField.addTarget(self, action: #selector(InitialViewController.textFieldDidChange(_:)), for: .editingChanged)
     }
     
 
     @IBAction func nextButton(_ sender: UIButton) {
         let categoriesViewController = CategoriesViewController()
-        categoriesViewController.totalParticipants = Int(participantsTextField.text ?? "0")!
+        categoriesViewController.totalParticipants = Int(participantsTextField.text!)
         categoriesViewController.modalPresentationStyle = .overFullScreen
         categoriesViewController.modalTransitionStyle = .crossDissolve
         present(categoriesViewController, animated: true)
@@ -52,8 +49,7 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func upButton(_ sender: UIButton) {
-        nextButton.isEnabled = true
-        if participantsTextField.text == "" || participantsTextField.text == nil {
+        if participantsTextField.text == "" {
             participantsTextField.text = "1"
         } else {
             guard let integer = Int(participantsTextField.text ?? "0") else { return }
@@ -63,8 +59,7 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func downButton(_ sender: UIButton) {
-        nextButton.isEnabled = true
-        if participantsTextField.text == "" || participantsTextField.text == nil {
+        if participantsTextField.text == "" {
             participantsTextField.text = "0"
         } else {
             guard let integer = Int(participantsTextField.text ?? "0") else { return }

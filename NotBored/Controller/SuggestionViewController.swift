@@ -11,7 +11,7 @@ class SuggestionViewController: UIViewController {
     
     let activitiesService = ActivitiesService()
     var category: ActivityModel = ActivityModel(type: "")
-    var totalParticipants: Int = 0
+    var totalParticipants: Int?
     
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var activityNameLabel: UILabel!

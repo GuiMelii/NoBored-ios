@@ -12,7 +12,7 @@ class CategoriesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var totalParticipants: Int = 0
+    var totalParticipants: Int?
     let categories = [ActivityModel(type: "Education"), ActivityModel(type: "Recreational"), ActivityModel(type: "Social"), ActivityModel(type: "Diy"), ActivityModel(type: "Charity"), ActivityModel(type: "Cooking"), ActivityModel(type: "Relaxation"), ActivityModel(type: "Music"), ActivityModel(type: "Busywork")]
 
     override func viewDidLoad() {
