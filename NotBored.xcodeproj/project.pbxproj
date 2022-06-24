@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		0E3E67D5285CFFDE008C86E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E67D4285CFFDE008C86E5 /* AppDelegate.swift */; };
 		0E3E67D7285CFFDE008C86E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E67D6285CFFDE008C86E5 /* SceneDelegate.swift */; };
-		0E3E67D9285CFFDE008C86E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E67D8285CFFDE008C86E5 /* ViewController.swift */; };
-		0E3E67DC285CFFDE008C86E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3E67DA285CFFDE008C86E5 /* Main.storyboard */; };
 		0E3E67DE285CFFE3008C86E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3E67DD285CFFE3008C86E5 /* Assets.xcassets */; };
 		0E3E67E1285CFFE3008C86E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3E67DF285CFFE3008C86E5 /* LaunchScreen.storyboard */; };
+		0E3E67EA285D09CF008C86E5 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E67E8285D09CF008C86E5 /* InitialViewController.swift */; };
+		0E3E67EB285D09CF008C86E5 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E3E67E9285D09CF008C86E5 /* InitialViewController.xib */; };
+		0E3E67EE285D1DD3008C86E5 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E67EC285D1DD3008C86E5 /* TermsViewController.swift */; };
+		0E3E67EF285D1DD3008C86E5 /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E3E67ED285D1DD3008C86E5 /* TermsViewController.xib */; };
+		0E7EA3D22864954800A9DB96 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EA3D12864954800A9DB96 /* Activity.swift */; };
+		0E7EA3D42864969A00A9DB96 /* ActivitiesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EA3D32864969A00A9DB96 /* ActivitiesServices.swift */; };
+		0E7EA3D6286496DD00A9DB96 /* ActivityFireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EA3D5286496DD00A9DB96 /* ActivityFireApiClient.swift */; };
+		0E8059EC2863B7B500C69C97 /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8059EA2863B7B500C69C97 /* SuggestionViewController.swift */; };
+		0E8059ED2863B7B500C69C97 /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8059EB2863B7B500C69C97 /* SuggestionViewController.xib */; };
+		0E9AAAD328622F00000D07E4 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AAAD128622F00000D07E4 /* CategoriesViewController.swift */; };
+		0E9AAAD428622F00000D07E4 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9AAAD228622F00000D07E4 /* CategoriesViewController.xib */; };
+		DFE2096B0E55AA5095C59CC9 /* Pods_NotBored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561C12FB9C9465A14D3227FB /* Pods_NotBored.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		038873A7EB512B9E91E95DA3 /* Pods-NotBored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.debug.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.debug.xcconfig"; sourceTree = "<group>"; };
 		0E3E67D1285CFFDE008C86E5 /* NotBored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotBored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E3E67D4285CFFDE008C86E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E3E67D6285CFFDE008C86E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E3E67D8285CFFDE008C86E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E3E67DB285CFFDE008C86E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E3E67DD285CFFE3008C86E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E3E67E0285CFFE3008C86E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E3E67E2285CFFE3008C86E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E3E67E8285D09CF008C86E5 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		0E3E67E9285D09CF008C86E5 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		0E3E67EC285D1DD3008C86E5 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		0E3E67ED285D1DD3008C86E5 /* TermsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsViewController.xib; sourceTree = "<group>"; };
+		0E7EA3D12864954800A9DB96 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		0E7EA3D32864969A00A9DB96 /* ActivitiesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesServices.swift; sourceTree = "<group>"; };
+		0E7EA3D5286496DD00A9DB96 /* ActivityFireApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFireApiClient.swift; sourceTree = "<group>"; };
+		0E8059EA2863B7B500C69C97 /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
+		0E8059EB2863B7B500C69C97 /* SuggestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionViewController.xib; sourceTree = "<group>"; };
+		0E9AAAD128622F00000D07E4 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		0E9AAAD228622F00000D07E4 /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		561C12FB9C9465A14D3227FB /* Pods_NotBored.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotBored.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E98A38FCA37A8B00E18CF9 /* Pods-NotBored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotBored.release.xcconfig"; path = "Target Support Files/Pods-NotBored/Pods-NotBored.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE2096B0E55AA5095C59CC9 /* Pods_NotBored.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				0E3E67D3285CFFDE008C86E5 /* NotBored */,
 				0E3E67D2285CFFDE008C86E5 /* Products */,
+				53DEBDBFE4EC16EF4C031CB5 /* Pods */,
+				E6B92EF85318423032890749 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,73 @@
 		0E3E67D3285CFFDE008C86E5 /* NotBored */ = {
 			isa = PBXGroup;
 			children = (
+				0EF2E07C2864B8170075A410 /* Controller */,
+				0EF2E0792864B7B00075A410 /* View */,
+				0E7EA3D02864953400A9DB96 /* Model */,
+				0EF2E07D2864B8A90075A410 /* Services */,
 				0E3E67D4285CFFDE008C86E5 /* AppDelegate.swift */,
 				0E3E67D6285CFFDE008C86E5 /* SceneDelegate.swift */,
-				0E3E67D8285CFFDE008C86E5 /* ViewController.swift */,
-				0E3E67DA285CFFDE008C86E5 /* Main.storyboard */,
 				0E3E67DD285CFFE3008C86E5 /* Assets.xcassets */,
 				0E3E67DF285CFFE3008C86E5 /* LaunchScreen.storyboard */,
 				0E3E67E2285CFFE3008C86E5 /* Info.plist */,
 			);
 			path = NotBored;
+			sourceTree = "<group>";
+		};
+		0E7EA3D02864953400A9DB96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E7EA3D12864954800A9DB96 /* Activity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0EF2E0792864B7B00075A410 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E3E67E9285D09CF008C86E5 /* InitialViewController.xib */,
+				0E3E67ED285D1DD3008C86E5 /* TermsViewController.xib */,
+				0E9AAAD228622F00000D07E4 /* CategoriesViewController.xib */,
+				0E8059EB2863B7B500C69C97 /* SuggestionViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EF2E07C2864B8170075A410 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E3E67E8285D09CF008C86E5 /* InitialViewController.swift */,
+				0E3E67EC285D1DD3008C86E5 /* TermsViewController.swift */,
+				0E9AAAD128622F00000D07E4 /* CategoriesViewController.swift */,
+				0E8059EA2863B7B500C69C97 /* SuggestionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EF2E07D2864B8A90075A410 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0E7EA3D32864969A00A9DB96 /* ActivitiesServices.swift */,
+				0E7EA3D5286496DD00A9DB96 /* ActivityFireApiClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		53DEBDBFE4EC16EF4C031CB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				038873A7EB512B9E91E95DA3 /* Pods-NotBored.debug.xcconfig */,
+				B8E98A38FCA37A8B00E18CF9 /* Pods-NotBored.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6B92EF85318423032890749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				561C12FB9C9465A14D3227FB /* Pods_NotBored.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E3E67E5285CFFE3008C86E5 /* Build configuration list for PBXNativeTarget "NotBored" */;
 			buildPhases = (
+				8BCB5EC7BFAA70D57BCFE129 /* [CP] Check Pods Manifest.lock */,
 				0E3E67CD285CFFDE008C86E5 /* Sources */,
 				0E3E67CE285CFFDE008C86E5 /* Frameworks */,
 				0E3E67CF285CFFDE008C86E5 /* Resources */,
+				302E83660A7A5D0C8C502035 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +212,77 @@
 			files = (
 				0E3E67E1285CFFE3008C86E5 /* LaunchScreen.storyboard in Resources */,
 				0E3E67DE285CFFE3008C86E5 /* Assets.xcassets in Resources */,
-				0E3E67DC285CFFDE008C86E5 /* Main.storyboard in Resources */,
+				0E8059ED2863B7B500C69C97 /* SuggestionViewController.xib in Resources */,
+				0E9AAAD428622F00000D07E4 /* CategoriesViewController.xib in Resources */,
+				0E3E67EF285D1DD3008C86E5 /* TermsViewController.xib in Resources */,
+				0E3E67EB285D09CF008C86E5 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		302E83660A7A5D0C8C502035 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotBored/Pods-NotBored-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCB5EC7BFAA70D57BCFE129 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotBored-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E3E67CD285CFFDE008C86E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E3E67D9285CFFDE008C86E5 /* ViewController.swift in Sources */,
+				0E8059EC2863B7B500C69C97 /* SuggestionViewController.swift in Sources */,
 				0E3E67D5285CFFDE008C86E5 /* AppDelegate.swift in Sources */,
+				0E9AAAD328622F00000D07E4 /* CategoriesViewController.swift in Sources */,
 				0E3E67D7285CFFDE008C86E5 /* SceneDelegate.swift in Sources */,
+				0E7EA3D42864969A00A9DB96 /* ActivitiesServices.swift in Sources */,
+				0E7EA3D6286496DD00A9DB96 /* ActivityFireApiClient.swift in Sources */,
+				0E3E67EA285D09CF008C86E5 /* InitialViewController.swift in Sources */,
+				0E7EA3D22864954800A9DB96 /* Activity.swift in Sources */,
+				0E3E67EE285D1DD3008C86E5 /* TermsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0E3E67DA285CFFDE008C86E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E3E67DB285CFFDE008C86E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E3E67DF285CFFE3008C86E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +410,7 @@
 		};
 		0E3E67E6285CFFE3008C86E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038873A7EB512B9E91E95DA3 /* Pods-NotBored.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +421,6 @@
 				INFOPLIST_FILE = NotBored/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +438,7 @@
 		};
 		0E3E67E7285CFFE3008C86E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E98A38FCA37A8B00E18CF9 /* Pods-NotBored.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +449,6 @@
 				INFOPLIST_FILE = NotBored/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
