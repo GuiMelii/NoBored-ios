@@ -35,7 +35,6 @@ final class InitialViewController: UIViewController, UITextFieldDelegate {
         participantsTextField.addTarget(self, action: #selector(InitialViewController.textFieldDidChange(_:)), for: .editingChanged)
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         UIApplication.shared.statusBarStyle = .darkContent
     }

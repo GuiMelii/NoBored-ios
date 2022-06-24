@@ -27,10 +27,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6j-nW-xcb">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3eH-aW-Rkb">
-                            <rect key="frame" x="16" y="72" width="103.5" height="20"/>
+                            <rect key="frame" x="16" y="58" width="103.5" height="20"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nz-Ot-Q50">
                                     <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -59,11 +59,11 @@
                     <constraints>
                         <constraint firstItem="3eH-aW-Rkb" firstAttribute="leading" secondItem="p6j-nW-xcb" secondAttribute="leading" constant="16" id="Xc4-Ci-aIG"/>
                         <constraint firstAttribute="bottom" secondItem="3eH-aW-Rkb" secondAttribute="bottom" constant="18" id="ccX-me-HlA"/>
-                        <constraint firstAttribute="height" constant="110" id="mb4-5P-Sb3"/>
+                        <constraint firstAttribute="height" constant="96" id="mb4-5P-Sb3"/>
                     </constraints>
                 </view>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df3-RB-oAP">
-                    <rect key="frame" x="0.0" y="110" width="414" height="786"/>
+                    <rect key="frame" x="0.0" y="96" width="414" height="800"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m12-Mi-Rfx">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="504"/>

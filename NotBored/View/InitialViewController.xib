@@ -43,9 +43,9 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JfX-vk-fjS">
                             <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="117"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma3-Jn-WyR">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participants" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="95.299999999999997" translatesAutoresizingMaskIntoConstraints="NO" id="ma3-Jn-WyR">
                                     <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="20"/>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -59,10 +59,6 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
-                            <constraints>
-                                <constraint firstItem="XrL-5G-YhF" firstAttribute="leading" secondItem="JfX-vk-fjS" secondAttribute="leading" id="5gT-6v-Sob"/>
-                                <constraint firstAttribute="trailing" secondItem="XrL-5G-YhF" secondAttribute="trailing" id="zHq-EG-Vcd"/>
-                            </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gdd-Yu-rE6">
                             <rect key="frame" x="167.33333333333337" y="0.0" width="50" height="117"/>
@@ -100,9 +96,6 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="JfX-vk-fjS" firstAttribute="centerY" secondItem="tXb-Au-zzw" secondAttribute="centerY" id="eNr-HM-tpF"/>
-                    </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czo-PT-nbj">
                     <rect key="frame" x="104" y="744" width="220" height="43"/>

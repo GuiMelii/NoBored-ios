@@ -21,14 +21,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2eo-lZ-PLQ">
-                    <rect key="frame" x="0.0" y="126" width="320" height="354"/>
+                    <rect key="frame" x="0.0" y="112" width="320" height="368"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWV-me-Z5Z">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qeY-VR-at6">
-                            <rect key="frame" x="16" y="72" width="288" height="20"/>
+                            <rect key="frame" x="16" y="58" width="288" height="20"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qaq-xg-jpz">
                                     <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -71,7 +71,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="110" id="6Bg-gq-9S1"/>
+                        <constraint firstAttribute="height" constant="96" id="6Bg-gq-9S1"/>
                         <constraint firstItem="qeY-VR-at6" firstAttribute="leading" secondItem="nWV-me-Z5Z" secondAttribute="leading" constant="16" id="JeQ-Ld-m62"/>
                         <constraint firstAttribute="trailing" secondItem="qeY-VR-at6" secondAttribute="trailing" constant="16" id="aZ7-Oa-TaI"/>
                         <constraint firstAttribute="bottom" secondItem="qeY-VR-at6" secondAttribute="bottom" constant="18" id="wlu-nb-Vsy"/>
