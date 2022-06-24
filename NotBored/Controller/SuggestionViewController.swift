@@ -9,18 +9,23 @@ import UIKit
 
 final class SuggestionViewController: UIViewController {
     
-    let activitiesService = ActivitiesService()
+    private let activitiesService = ActivitiesService()
     var category: ActivityModel = ActivityModel(type: "")
     var totalParticipants: Int?
     
-    @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var activityNameLabel: UILabel!
-    @IBOutlet weak var participantsLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var categoryRandomLabel: UILabel!
-    @IBOutlet weak var categoryStackView: UIStackView!
-    @IBOutlet weak var coinLogoImageView: UIImageView!
-    @IBOutlet weak var labelsStackView: UIStackView!
+    // MARK: - IBOutlets
+    @IBOutlet private weak var categoryLabel: UILabel!
+    @IBOutlet private weak var activityNameLabel: UILabel!
+    @IBOutlet private weak var participantsLabel: UILabel!
+    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var categoryRandomLabel: UILabel!
+    @IBOutlet private weak var categoryStackView: UIStackView!
+    @IBOutlet private weak var coinLogoImageView: UIImageView!
+    @IBOutlet private weak var labelsStackView: UIStackView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +41,7 @@ final class SuggestionViewController: UIViewController {
         getApiData()
     }
     
-    func getApiData() {
+    private func getApiData() {
         activitiesService.getActivities(category: category.type, participants: totalParticipants) { data in
             if let apiResponse = data {
                 self.labelsStackView.isHidden = false
@@ -49,17 +54,17 @@ final class SuggestionViewController: UIViewController {
             } else {
                 self.labelsStackView.isHidden = true
                 print("Erro ao pegar dados da API.")
-                self.activityNameLabel.text = "Erro ao pegar dados da API ❌"
+                self.activityNameLabel.text = "Error ❌"
 
             }
         }
     }
     
-    @IBAction func tryAgainButton(_ sender: UIButton) {
+    @IBAction private func tryAgainButton(_ sender: UIButton) {
         getApiData()
     }
     
-    @IBAction func goBack(_ sender: UIButton) {
+    @IBAction private func goBack(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
 

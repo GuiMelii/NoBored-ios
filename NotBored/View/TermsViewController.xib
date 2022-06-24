@@ -22,8 +22,8 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fTM-Fs-xUU">
                     <rect key="frame" x="24" y="76" width="366" height="31"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Termos e condições" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-gD-sHg">
-                            <rect key="frame" x="0.0" y="0.0" width="195.5" height="31"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-gD-sHg">
+                            <rect key="frame" x="0.0" y="0.0" width="213" height="31"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>

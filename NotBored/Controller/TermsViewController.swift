@@ -9,7 +9,9 @@ import UIKit
 
 final class TermsViewController: UIViewController {
 
-    @IBOutlet weak var termsTextView: UITextView!
+    // MARK: - IBOutlets
+    @IBOutlet private weak var termsTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         termsTextView.showsVerticalScrollIndicator = false
@@ -19,17 +21,7 @@ final class TermsViewController: UIViewController {
     }
 
 
-    @IBAction func dismissButton(_ sender: Any) {
+    @IBAction private func dismissButton(_ sender: Any) {
         self.dismiss(animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

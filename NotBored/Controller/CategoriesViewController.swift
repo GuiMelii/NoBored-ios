@@ -10,10 +10,13 @@ import Foundation
 
 final class CategoriesViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
     var totalParticipants: Int?
-    let categories = [ActivityModel(type: "Education"), ActivityModel(type: "Recreational"), ActivityModel(type: "Social"), ActivityModel(type: "Diy"), ActivityModel(type: "Charity"), ActivityModel(type: "Cooking"), ActivityModel(type: "Relaxation"), ActivityModel(type: "Music"), ActivityModel(type: "Busywork")]
+    private let categories = [ActivityModel(type: "Education"), ActivityModel(type: "Recreational"), ActivityModel(type: "Social"), ActivityModel(type: "Diy"), ActivityModel(type: "Charity"), ActivityModel(type: "Cooking"), ActivityModel(type: "Relaxation"), ActivityModel(type: "Music"), ActivityModel(type: "Busywork")]
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,18 +25,36 @@ final class CategoriesViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+    }
         
-    @IBAction func randomButton(_ sender: UIButton) {
+    @IBAction private func randomButton(_ sender: UIButton) {
+        let category = ActivityModel(type: "Random")
+        navigateToSuggestionViewController(categoryType: category)
+    }
+    
+    @IBAction private func goBackButton(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
+    private func navigateToSuggestionViewController(categoryType: ActivityModel) {
         let suggestionViewController = SuggestionViewController()
         suggestionViewController.totalParticipants = totalParticipants
         suggestionViewController.modalPresentationStyle = .overFullScreen
         suggestionViewController.modalTransitionStyle = .crossDissolve
-        suggestionViewController.category = ActivityModel(type: "Random")
+        suggestionViewController.category = categoryType
         present(suggestionViewController, animated: true)
-    }
-    
-    @IBAction func goBackButton(_ sender: UIButton) {
-        self.dismiss(animated: true)
     }
     
 }
@@ -59,12 +80,8 @@ extension CategoriesViewController: UITableViewDataSource {
 extension CategoriesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let suggestionViewController = SuggestionViewController()
-        suggestionViewController.totalParticipants = totalParticipants
-        suggestionViewController.modalPresentationStyle = .overFullScreen
-        suggestionViewController.modalTransitionStyle = .crossDissolve
-        suggestionViewController.category = categories[indexPath.row]
-        present(suggestionViewController, animated: true)
+        let category = categories[indexPath.row]
+        navigateToSuggestionViewController(categoryType: category)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

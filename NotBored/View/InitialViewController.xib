@@ -122,14 +122,15 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKa-VC-U1F">
-                    <rect key="frame" x="142.66666666666669" y="832" width="142.66666666666669" height="29"/>
+                    <rect key="frame" x="139" y="832" width="150" height="29"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain">
                         <attributedString key="attributedTitle">
-                            <fragment content="Termos e Condições">
+                            <fragment content="Terms and Conditions">
                                 <attributes>
                                     <font key="NSFont" size="13" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                     <integer key="NSUnderline" value="1"/>
                                 </attributes>
                             </fragment>
@@ -141,7 +142,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="n9B-Hl-7TN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Bd-bf-wJY"/>
                 <constraint firstItem="vKa-VC-U1F" firstAttribute="top" secondItem="czo-PT-nbj" secondAttribute="bottom" constant="45" id="A4W-tl-hqo"/>
@@ -160,9 +161,6 @@
         <image name="arrow.up.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

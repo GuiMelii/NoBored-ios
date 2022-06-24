@@ -8,9 +8,6 @@ final class ActivitiesService {
     func getActivities(category: String, participants: Int?, completion: @escaping (Activity?) -> Void) {
         let finalActivityUrl = getActivitiesUrl("http://www.boredapi.com/api/activity", category, participants)
         
-
-        
-        print(finalActivityUrl)
         apiClient.get(url: finalActivityUrl) { response in
             switch response {
             case .success(let data):

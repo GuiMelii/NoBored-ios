@@ -9,8 +9,9 @@ import UIKit
 
 final class InitialViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var participantsTextField: UITextField!
+    // MARK: - IBOutlets
+    @IBOutlet private weak var nextButton: UIButton!
+    @IBOutlet private weak var participantsTextField: UITextField!
 
     @objc func textFieldDidChange(_ textField: UITextField) {
         let convertedToNumber = Int(participantsTextField.text ?? "0")
@@ -34,8 +35,17 @@ final class InitialViewController: UIViewController, UITextFieldDelegate {
         participantsTextField.addTarget(self, action: #selector(InitialViewController.textFieldDidChange(_:)), for: .editingChanged)
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = .darkContent
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+    }
 
-    @IBAction func nextButton(_ sender: UIButton) {
+    @IBAction private func nextButton(_ sender: UIButton) {
         let categoriesViewController = CategoriesViewController()
         categoriesViewController.totalParticipants = Int(participantsTextField.text!)
         categoriesViewController.modalPresentationStyle = .overFullScreen
@@ -43,12 +53,12 @@ final class InitialViewController: UIViewController, UITextFieldDelegate {
         present(categoriesViewController, animated: true)
     }
     
-    @IBAction func termsButton(_ sender: Any) {
+    @IBAction private func termsButton(_ sender: Any) {
         let termsViewController = TermsViewController()
         present(termsViewController, animated: true)
     }
     
-    @IBAction func upButton(_ sender: UIButton) {
+    @IBAction private func upButton(_ sender: UIButton) {
         if participantsTextField.text == "" {
             participantsTextField.text = "1"
         } else {
@@ -58,7 +68,7 @@ final class InitialViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func downButton(_ sender: UIButton) {
+    @IBAction private func downButton(_ sender: UIButton) {
         if participantsTextField.text == "" {
             participantsTextField.text = "0"
         } else {
