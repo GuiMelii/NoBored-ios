@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class CategoriesViewController: UIViewController {
+final class CategoriesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,7 +24,6 @@ class CategoriesViewController: UIViewController {
     }
         
     @IBAction func randomButton(_ sender: UIButton) {
-        print("hello")
         let suggestionViewController = SuggestionViewController()
         suggestionViewController.totalParticipants = totalParticipants
         suggestionViewController.modalPresentationStyle = .overFullScreen

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InitialViewController: UIViewController, UITextFieldDelegate {
+final class InitialViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var participantsTextField: UITextField!

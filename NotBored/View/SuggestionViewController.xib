@@ -166,7 +166,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </backgroundConfiguration>
                                         <attributedString key="attributedTitle">
-                                            <fragment content="Tente novamente">
+                                            <fragment content="Try again">
                                                 <attributes>
                                                     <font key="NSFont" size="12" name="Helvetica"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TermsViewController: UIViewController {
+final class TermsViewController: UIViewController {
 
     @IBOutlet weak var termsTextView: UITextView!
     override func viewDidLoad() {

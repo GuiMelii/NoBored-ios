@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SuggestionViewController: UIViewController {
+final class SuggestionViewController: UIViewController {
     
     let activitiesService = ActivitiesService()
     var category: ActivityModel = ActivityModel(type: "")
