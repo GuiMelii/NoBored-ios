@@ -47,9 +47,9 @@ final class CategoriesViewController: UIViewController {
     private func navigateToSuggestionViewController(categoryType: ActivityModel) {
         let suggestionViewController = SuggestionViewController()
         suggestionViewController.totalParticipants = totalParticipants
+        suggestionViewController.category = categoryType
         suggestionViewController.modalPresentationStyle = .overFullScreen
         suggestionViewController.modalTransitionStyle = .crossDissolve
-        suggestionViewController.category = categoryType
         present(suggestionViewController, animated: true)
     }
     
